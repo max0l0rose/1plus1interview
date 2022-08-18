@@ -17,6 +17,17 @@ public class Main {
     }
 
 
+    static void findCountOfEntrance() {
+        String str = "ONE, TWO, THRE, SIX, FIVE, SIX, ONEEE";
+        String words = "ONE, SIX";
+
+        // streams
+
+        //ONE - 1
+        //SIX - 2
+    }
+
+
     //0 1 2 3 4 5 6
     //1 1 2 3 5 8 13
     static int fib_r(int n) {
@@ -81,4 +92,7 @@ public class Main {
 
         int a = 1;
     }
+
 }
+
+
