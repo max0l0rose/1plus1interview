@@ -49,7 +49,10 @@ public class Main {
                 .sorted(Comparator.comparing(Map.Entry::getValue, Comparator.reverseOrder())) //(c1, c2) -> c1.getValue().compareTo(c2.getValue())
                //.sorted(Map.Entry.comparingByValue().reversed()) //(c1, c2) -> c1.getValue().compareTo(c2.getValue())
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue
-                        , (e1, e2) -> e1// + e2
+                        , (e1, e2) -> {
+                            throw new IllegalStateException();
+                            //e1// + e2
+                        }
                         , LinkedHashMap::new
                 ));
 
