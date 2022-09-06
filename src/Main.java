@@ -23,6 +23,8 @@ public class Main {
 
 
     static void findCountOfEntrance() {
+        //Set;
+
         String str = "ONE, TWO, THRE, SIX, FIVE, SIX, ONEEE";
         String words = "ONE, SIX, ONE";
 
@@ -76,11 +78,11 @@ public class Main {
         }
 
         int a = fib_r(n-1);
-        System.out.println("a = " + a);
+        //System.out.println("a = " + a);
         int b = fib_r(n-2);
-        System.out.println("b = " + b);
+        //System.out.println("b = " + b);
         int c = a + b;
-        System.out.println("c = " + c + " (" + a + "+" + b + ")");
+        //System.out.println("c = " + c + " (" + a + "+" + b + ")");
         return c;
     }
 
